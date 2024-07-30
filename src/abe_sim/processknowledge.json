@@ -52,6 +52,11 @@
                                 "default": {
                                         "toReplace": "BakedCrouton"
                                 }
+                        },
+                        "FlattenedAfghanCookieDoughBall": {
+                                "default": {
+                                        "toReplace": "BakedAfghanCookie"
+                                }
                         }
                 },
                 "consuming": {
@@ -10100,6 +10105,16 @@
                         "ButterParticle;DoughParticle": {
                                 "default": {
                                         "toReplace": "DoughParticle"
+                                }
+                        },
+                        "CocoaPowderParticle;FlourParticle;CreamedButter": {
+                                "default": {
+                                        "toReplace": "CocoaFlourButterMixture"
+                                }
+                        },
+                        "CornFlake;CocoaFlourButterMixture": {
+                                "default": {
+                                        "toReplace": "CocoaFlourButterCornflakesMixture"
                                 }
                         },
                         "DoughParticle;SugarParticle": {

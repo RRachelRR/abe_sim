@@ -464,9 +464,14 @@
               "filename": "3DObjects/Avocado/avocado_particle.urdf",
               "fn": {
                      "temperatureUpdateable": true,
-                     "transportable": true
+                     "transportable": true,
+                     "mingleable": true
               },
-              "customStateVariables": {}
+              "customStateVariables": {
+                      "mingling": {
+                              "hp": 900
+                      }
+              }
        },
        {
               "type": "ChoppedAvocado",
@@ -2092,9 +2097,14 @@
                      "temperatureUpdateable": true,
                      "transportable": true,
                      "absorbable": true,
-                     "consumable": true
+                     "consumable": true,
+                     "mixable": true
               },
-              "customStateVariables": {}
+              "customStateVariables": {
+                     "mixing": {
+                            "hp": 720
+                     }
+              }
        },
        {
               "type": "VanillaExtractBag",
@@ -4192,9 +4202,14 @@
                      "temperatureUpdateable": true,
                      "graspable": true,
                      "sticky": true,
-                     "transportable": true
+                     "transportable": true,
+                     "mingleable": true
               },
-              "customStateVariables": {}
+              "customStateVariables": {
+                      "mingling": {
+                              "hp": 900
+                      }
+              }
        },
        {
               "type": "ChoppedBroccoli",
@@ -5365,9 +5380,14 @@
               "simtype": "ktree",
               "filename": "3DObjects/CocoaPowder/cocoa_powder_particle.urdf",
               "fn": {
-                     "graspable": true
+                     "graspable": true,
+                     "mixable": true
               },
-              "customStateVariables": {}
+              "customStateVariables": {
+                     "mixing": {
+                            "hp": 720
+                     }
+              }
        },
        {
               "type": "CocoaPowderBag",
@@ -5613,9 +5633,14 @@
               "simtype": "ktree",
               "filename": "3DObjects/CornFlakes/corn_flake.urdf",
               "fn": {
-                     "graspable": true
+                     "graspable": true,
+                     "mixable": true
               },
-              "customStateVariables": {}
+              "customStateVariables": {
+                     "mixing": {
+                            "hp": 720
+                     }
+              }
        },
        {
               "type": "CornFlakeBag",
@@ -7776,9 +7801,14 @@
               "fn": {
                      "temperatureUpdateable": true,
                      "graspable": true,
-                     "transportable": true
+                     "transportable": true,
+                     "mingleable": true
               },
-              "customStateVariables": {}
+              "customStateVariables": {
+                      "mingling": {
+                              "hp": 900
+                      }
+              }
        },
        {
               "type": "ToastedAlmond",
@@ -8038,9 +8068,14 @@
               "simtype": "ktree",
               "filename": "3DObjects/Celery/choppedCeleryStick.urdf",
               "fn": {
-                     "graspable": true
+                     "graspable": true,
+                     "mingleable": true
               },
-              "customStateVariables": {}
+              "customStateVariables": {
+                     "mingling": {
+                            "hp": 900
+                    }
+              }
        },
        {
               "type": "ChocolateChip",
@@ -8109,9 +8144,14 @@
               "simtype": "ktree",
               "filename": "3DObjects/CookedChicken/chopped_cooked_chicken.urdf",
               "fn": {
-                     "graspable": true
+                     "graspable": true,
+                     "mingleable": true
               },
-              "customStateVariables": {}
+              "customStateVariables": {
+                     "mingling": {
+                            "hp": 900
+                    }
+              }
        },
        {
               "type": "Corn",
@@ -10271,6 +10311,74 @@
                      "mixing": {
                             "hp": 720
                      }
+              }
+       },
+       {
+              "type": "AvocadoChickenSalad",
+              "simtype": "ktree",
+              "filename": "3DObjects/AvocadoChickenSalad/chickenAvocadoSalad.urdf",
+              "fn": {
+                     "transportable": true,
+                     "mingleable": true
+              },
+              "customStateVariables": {
+                      "mingling": {
+                              "hp": 900
+                      }
+              }
+       },
+       {
+              "type": "SeasonedAvocadoChickenSalad",
+              "simtype": "ktree",
+              "filename": "3DObjects/AvocadoChickenSalad/chickenAvocadoSalad.urdf",
+              "fn": {
+                     "transportable": true
+              },
+              "customStateVariables": {
+              }
+       },
+       {
+              "type": "CoveredAvocadoChickenSalad",
+              "simtype": "ktree",
+              "filename": "3DObjects/AvocadoChickenSalad/coveredChickenAvocadoSalad.urdf",
+              "fn": {
+                     "transportable": true
+              },
+              "customStateVariables": {
+              }
+       },
+       {
+              "type": "AfghanCookieDoughBall",
+              "simtype": "ktree",
+              "filename": "3DObjects/AfghanCookie/doughBall.urdf",
+              "fn": {
+                     "transportable": true
+              },
+              "customStateVariables": {
+              }
+       },
+       {
+              "type": "FlattenedAfghanCookieDoughBall",
+              "simtype": "ktree",
+              "filename": "3DObjects/AfghanCookie/slightlyFlattenedDoughBall.urdf",
+              "fn": {
+                     "transportable": true,
+                     "bakeable": true
+              },
+              "customStateVariables": {
+                     "baking": {
+                            "hp": 3000
+                     }
+              }
+       },
+       {
+              "type": "BakedAfghanCookie",
+              "simtype": "ktree",
+              "filename": "3DObjects/AfghanCookie/bakedAfghanCookie.urdf",
+              "fn": {
+                     "transportable": true
+              },
+              "customStateVariables": {
               }
        }
 ]
